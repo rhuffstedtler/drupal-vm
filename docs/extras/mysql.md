@@ -1,8 +1,8 @@
-By default, this VM is set up so you can manage MySQL databases on your own. The default root MySQL user credentials are `root` for username and password, but you can change the password via `config.yml` (changing the `mysql_root_password` variable). I use the [Sequel Pro](http://www.sequelpro.com/) (Mac-only) to connect and manage databases, and Drush to sync databases (sometimes I'll just do a dump and import, but Drush is usually quicker, and is easier to do over and over again when you need it).
+By default, this VM is set up so you can manage MySQL databases on your own. The default root MySQL user credentials are `root` for username and password, but you can change the password via `config.yml` (changing the `mysql_root_password` variable). I use [Sequel Pro](http://www.sequelpro.com/) (macOS-only) to connect to and manage databases, and Drush to sync databases (sometimes I'll just do a dump and import, but Drush is usually quicker, and is easier to do over and over again when you need it).
 
 ## Connect using Adminer
 
-If you have `adminer` listed as one of the `installed_extras` inside `config.yml`, you can use Adminer's web-based interface to interact with databases. With Drupal VM running, visit `http://drupalvm.dev/adminer/`, and log in with `root` as the username and the password you set in `config.yml` (`mysql_root_password`). Leave the "Server" field blank. The "Database" field is optional.
+If you have `adminer` listed as one of the `installed_extras` inside `config.yml`, you can use Adminer's web-based interface to interact with databases. With Drupal VM running, visit `http://adminer.drupalvm.dev/`, and log in with `root` as the username and the password you set in `config.yml` (`mysql_root_password`). Leave the "Server" field blank. The "Database" field is optional.
 
 More about how to use Adminer: [Adminer website](http://www.adminer.org/).
 
